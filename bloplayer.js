@@ -8,7 +8,7 @@ $(".link-lightbox").on("click", function() {
         g = '<div id="window">',
         h = '<div id="ref"><a href="https://101helper.blogspot.com">Powered by 101Helper</a>',
         i = "</div></div></div></div>";
-    if ($("body").append(g + f + e + d + c + b + h+i), $("#window").hide(), "youtube" == $(this).data("videosite")) var i = "<object height="100%" id="BLOG_video-" + $(this).data("videoid") + "" width="100%"></object>";
+    if ($("body").append(g + f + e + d + c + b + h+i), $("#window").hide(), "youtube" == $(this).data("videosite")) var i = "http://www.blogger.com/video-play.mp4?contentId=" + $(this).data("videoid")";
     $("#window").fadeIn(), $("#video-embed").attr("src", i), $("#close-icon").on("click", function() {
         $("#window").fadeOut(1e3, function() {
             $(this).remove()
